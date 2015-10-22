@@ -2,11 +2,132 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700);
 
 
-.alert-notice {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
+html, body {
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Merriweather', serif; 
+}
+
+body {
+  background: url('https://dl.dropboxusercontent.com/u/6407774/Dev%20Junction%20-%205.png') no-repeat center center fixed; 
+  background-size: cover; 
+  
+} 
+
+/* HEADER Navigation*/
+
+.navbar {
+  background:rgba(0,0,0,.5);
+  border: none;
+  height: 60px;
+} 
+
+.navbar-brand p {
+  color: #fff;
+  padding: 0 0 5px;
+  font-size: 1.5em;
+
+}
+
+ul.nav.navbar-nav.navbar-right li a {
+  color: #fff; 
+  font-size: 14px;
+  padding-bottom: 5px;
+} 
+  
+ul.nav.navbar-nav.navbar-right li a:hover, .navbar-brand p:hover {
+  border-bottom: 1px solid #00ffbc; 
+  color: #00ffbc; 
+  cursor: pointer; 
+} 
+
+
+/* Navbar Toggle */
+
+@media only screen 
+and (max-width: 768px) {
+    .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+    }
+}
+
+/* Jumbotron */
+
+.jumbotron {
+  background-color: transparent; 
+  text-align: center; 
+  position: relative; 
+  top: 30px; 
+} 
+
+.jumbotron h1 {
+  color: #fff; 
+  font-size: 60px; 
+  text-shadow: 0 2px 3px rgba(0,0,0,.4); 
+}
+
+.jumbotron h3 {
+  color: rgba(0,255,188,0.8);
+} 
+
+/* Forms */
+
+.well {
+  background-color: rgba(0,0,0, .5);
+  border: none;
+  color: #d3d3d3;
+}
+
+.well h2 {
+  text-shadow: 0 2px 3px rgba(0,0,0,.4)
+}
+
+
+.btn-success {
+  background: rgba(0,255,188,0.7);
+  color: #fff;
+  font-size: 18px; 
+  letter-spacing: 1.3px;
+  border: none;
+}
+
+.btn-primary {
+  background: rgba(0,255,252,0.7);
+  color: #fff;
+  font-size: 18px; 
+  letter-spacing: 1.3px;
+  border: none;
+}
+
+.btn-success:hover, .btn-primary:hover {
+  background:rgba(0,0,0,0.5); 
+  border:none;
+}
+
+.about-us {
+  color: rgba(0,255,188,0.8); 
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.devise-links {
+  margin-top: 20px;
+}
+
+.devise-links a {
+  color: #d3d3d3;
+  font-size: 0.9em;
+}
+
+
+
+/* Alert Notice */
+.alert-notice, .alert-success, .alert-danger  {
+  background-color: rgba(0,0,0, .5);
+  border: none;
+  color: rgba(0,255,188,0.8);
 }
 

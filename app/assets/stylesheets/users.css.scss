@@ -8,9 +8,9 @@
     display: inline-block;
     width: 30px;
     height: 30px;
-    border: 2px solid #2e6da4;
+    border: 2px solid rgba(0,255,188,0.8);
     border-radius: 4px;
-    background-color: #337ab7;
+    background-color: rgba(255, 255, 255, 0.5);
     color: white;
     text-align: center;
 }
@@ -21,15 +21,11 @@
       margin-top: 0;    
     }
 }
-.well.profile-description {
-    background-color: #5cb85c;
+/*.well.profile-description, .well.contact-info {
+    background-color: rgba(255, 255, 255, 0.5);
     border-color: #4cae4c;
-}
+}*/
 
-.well.contact-info {
-    background-color: #5bc0de;
-    border-color: #46b8da;
-}
 
 /* Users Index Page Styles */
 .user-index-avatar {
@@ -37,5 +33,16 @@
 }
 
 .well.white-bg {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
+.profile-job-title {
+    color: #737373;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.profile-name a {
+    text-decoration: none;
+}
+
